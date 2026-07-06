@@ -1,0 +1,39 @@
+<div class="loading-header">
+  <a href="/#" class="loader-title" data-cursor="disable">Esraa Shiref</a>
+  <div class="loaderGame" [class.loader-out]="clicked">
+    <div class="loaderGame-container">
+      <div class="loaderGame-in">
+        <div class="loaderGame-line" *ngFor="let _ of [].constructor(27)"></div>
+      </div>
+      <div class="loaderGame-ball"></div>
+    </div>
+  </div>
+</div>
+<div class="loading-screen">
+  <div class="loading-marquee">
+    <div class="marquee-track">
+      <span *ngFor="let item of marqueeItems">&nbsp; {{ item }} &nbsp;</span>
+      <span *ngFor="let item of marqueeItems">&nbsp; {{ item }} &nbsp;</span>
+    </div>
+  </div>
+  <div
+    class="loading-wrap"
+    [class.loading-clicked]="clicked"
+    (mousemove)="onMouseMove($event)"
+  >
+    <div class="loading-hover"></div>
+    <div class="loading-button" [class.loading-complete]="loaded">
+      <div class="loading-container">
+        <div class="loading-content">
+          <div class="loading-content-in">
+            Loading <span>{{ percent() }}%</span>
+          </div>
+        </div>
+        <div class="loading-box"></div>
+      </div>
+      <div class="loading-content2">
+        <span>Welcome</span>
+      </div>
+    </div>
+  </div>
+</div>

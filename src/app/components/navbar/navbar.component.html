@@ -1,0 +1,29 @@
+<div class="header">
+  <a href="/#" class="navbar-title" data-cursor="disable">ES</a>
+  <a
+    [href]="'mailto:' + config.contact.email"
+    class="navbar-connect"
+    data-cursor="disable"
+  >{{ config.contact.email }}</a>
+  <ul>
+    <li>
+      <a data-href="#about" href="#about">
+        <app-hover-links text="ABOUT" />
+      </a>
+    </li>
+    <li>
+      <a data-href="#work" href="#work">
+        <app-hover-links text="WORK" />
+      </a>
+    </li>
+    <li>
+      <a data-href="#contact" href="#contact">
+        <app-hover-links text="CONTACT" />
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="landing-circle1"></div>
+<div class="landing-circle2"></div>
+<div class="nav-fade"></div>

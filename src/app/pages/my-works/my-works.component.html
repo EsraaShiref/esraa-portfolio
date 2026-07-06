@@ -1,0 +1,22 @@
+<div class="myworks-page">
+  <div class="myworks-header">
+    <a routerLink="/" class="back-button" data-cursor="disable">&larr; Back to Home</a>
+    <h1>All <span>Works</span></h1>
+    <p>A collection of all my projects and creations</p>
+  </div>
+
+  <div class="myworks-grid">
+    <div class="myworks-card" *ngFor="let project of projects; let i = index" data-cursor="disable">
+      <div class="myworks-card-number">0{{ i + 1 }}</div>
+      <div class="myworks-card-image">
+        <img [src]="project.image" [alt]="project.title" />
+      </div>
+      <div class="myworks-card-info">
+        <h3>{{ project.title }}</h3>
+        <p class="myworks-card-category">{{ project.category }}</p>
+        <p class="myworks-card-description">{{ project.description }}</p>
+        <p class="myworks-card-tech">{{ project.technologies }}</p>
+      </div>
+    </div>
+  </div>
+</div>

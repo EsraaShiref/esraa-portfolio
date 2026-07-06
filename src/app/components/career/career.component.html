@@ -1,0 +1,20 @@
+<div class="career-section section-container">
+  <div class="career-container">
+    <h2>My career <span>&amp;</span><br /> experience</h2>
+    <div class="career-info">
+      <div class="career-timeline">
+        <div class="career-dot"></div>
+      </div>
+      <div class="career-info-box" *ngFor="let exp of config.experiences">
+        <div class="career-info-in">
+          <div class="career-role">
+            <h4>{{ exp.position }}</h4>
+            <h5>{{ exp.company }}</h5>
+          </div>
+          <h3>{{ getDisplayYear(exp.period) }}</h3>
+        </div>
+        <p>{{ exp.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

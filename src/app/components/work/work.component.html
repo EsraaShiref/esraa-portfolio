@@ -1,0 +1,30 @@
+<div class="work-section" id="work">
+  <div class="work-container section-container">
+    <h2>My <span>Work</span></h2>
+    <div class="work-flex">
+      <div class="work-box" *ngFor="let project of projects; let i = index">
+        <div class="work-info">
+          <div class="work-title">
+            <h3>0{{ i + 1 }}</h3>
+            <div>
+              <h4>{{ project.title }}</h4>
+              <p>{{ project.category }}</p>
+            </div>
+          </div>
+          <h4>Tools and features</h4>
+          <p>{{ project.technologies }}</p>
+        </div>
+        <app-work-image [image]="project.image" [alt]="project.title" />
+      </div>
+
+      <!-- See All Works Button -->
+      <div class="work-box work-box-cta">
+        <div class="see-all-works">
+          <h3>Want to see more?</h3>
+          <p>Explore all of my projects and creations</p>
+          <a routerLink="/myworks" class="see-all-btn" data-cursor="disable">See All Works &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

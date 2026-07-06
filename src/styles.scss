@@ -1,0 +1,22 @@
+/* Global stylesheet - ported from the original React app's CSS imports.
+   Kept global (not per-component) intentionally: GSAP timelines and
+   scroll triggers throughout this app select elements by class name
+   across component boundaries, which requires un-encapsulated CSS. */
+
+@import './styles/index-base.css';
+@import './styles/App.css';
+@import './styles/style.css';
+@import './styles/Cursor.css';
+@import './styles/Navbar.css';
+@import './styles/Landing.css';
+@import './styles/Loading.css';
+@import './styles/About.css';
+@import './styles/WhatIDo.css';
+@import './styles/TechStackNew.css';
+@import './styles/Career.css';
+@import './styles/Work.css';
+@import './styles/CallToAction.css';
+@import './styles/Contact.css';
+@import './styles/SocialIcons.css';
+@import './styles/MyWorks.css';
+@import './styles/Play.css';

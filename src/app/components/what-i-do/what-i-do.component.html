@@ -1,0 +1,58 @@
+<div class="whatIDO">
+  <div class="what-box">
+    <h2 class="title">
+      W<span class="hat-h2">HAT</span>
+      <div>&nbsp;I<span class="do-h2"> DO</span></div>
+    </h2>
+  </div>
+  <div class="what-box">
+    <div class="what-box-in">
+      <div class="what-border2">
+        <svg width="100%">
+          <line x1="0" y1="0" x2="0" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="7,7" />
+          <line x1="100%" y1="0" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="7,7" />
+        </svg>
+      </div>
+
+      <div class="what-content what-noTouch" #whatContent>
+        <div class="what-border1">
+          <svg height="100%">
+            <line x1="0" y1="0" x2="100%" y2="0" stroke="white" stroke-width="2" stroke-dasharray="6,6" />
+            <line x1="0" y1="100%" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="6,6" />
+          </svg>
+        </div>
+        <div class="what-corner"></div>
+
+        <div class="what-content-in">
+          <h3>{{ config.skills.develop.title }}</h3>
+          <h4>{{ config.skills.develop.description }}</h4>
+          <p>{{ config.skills.develop.details }}</p>
+          <h5>Skillset &amp; tools</h5>
+          <div class="what-content-flex">
+            <div class="what-tags" *ngFor="let tool of config.skills.develop.tools">{{ tool }}</div>
+          </div>
+          <div class="what-arrow"></div>
+        </div>
+      </div>
+
+      <div class="what-content what-noTouch" #whatContent>
+        <div class="what-border1">
+          <svg height="100%">
+            <line x1="0" y1="100%" x2="100%" y2="100%" stroke="white" stroke-width="2" stroke-dasharray="6,6" />
+          </svg>
+        </div>
+        <div class="what-corner"></div>
+        <div class="what-content-in">
+          <h3>{{ config.skills.design.title }}</h3>
+          <h4>{{ config.skills.design.description }}</h4>
+          <p>{{ config.skills.design.details }}</p>
+          <h5>Skillset &amp; tools</h5>
+          <div class="what-content-flex">
+            <div class="what-tags" *ngFor="let tool of config.skills.design.tools">{{ tool }}</div>
+          </div>
+          <div class="what-arrow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

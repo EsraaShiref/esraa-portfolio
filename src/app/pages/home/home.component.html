@@ -1,0 +1,20 @@
+<app-loading *ngIf="loadingService.isLoading()" [percent]="loadingService.loadingPercent()" />
+
+<main class="main-body">
+  <div class="container-main">
+    <app-cursor />
+    <app-navbar />
+    <app-social-icons />
+    <app-character *ngIf="isDesktopView() && !isMobile" />
+    <div class="container-main">
+      <app-landing />
+      <app-about />
+      <app-what-i-do />
+      <app-career />
+      <app-work />
+      <app-tech-stack />
+      <app-call-to-action />
+      <app-contact />
+    </div>
+  </div>
+</main>

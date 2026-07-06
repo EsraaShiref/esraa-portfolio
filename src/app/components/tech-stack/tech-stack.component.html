@@ -1,0 +1,31 @@
+<div class="techstack-new">
+  <!-- Video Background -->
+  <div class="techstack-video-container">
+    <video autoplay loop muted playsinline class="techstack-video">
+      <source src="/video/video.webm" type="video/webm" />
+    </video>
+    <div class="techstack-overlay"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="techstack-content">
+    <h2>Tech Stack</h2>
+
+    <div class="techstack-pyramid">
+      <div class="techstack-row" *ngFor="let row of techStack">
+        <a
+          *ngFor="let tech of row"
+          [href]="tech.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="techstack-item"
+          [title]="tech.name"
+          data-cursor="disable"
+        >
+          <img [src]="tech.icon" [alt]="tech.name" />
+          <span>{{ tech.name }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="contact-section section-container" id="contact">
+  <div class="contact-container">
+    <h3>{{ config.developer.fullName }}</h3>
+    <div class="contact-flex">
+      <div class="contact-box">
+        <h4>Email</h4>
+        <p>
+          <a [href]="'mailto:' + config.contact.email" data-cursor="disable">{{ config.contact.email }}</a>
+        </p>
+        <h4>Location</h4>
+        <p><span>{{ config.social.location }}</span></p>
+      </div>
+      <div class="contact-box">
+        <h4>Social</h4>
+        <a
+          [href]="config.contact.github"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cursor="disable"
+          class="contact-social"
+        >
+          Github
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+            <path d="M6 6l10.59 10.59L18 15.17V6H6z" transform="rotate(45 12 12)"/>
+          </svg>
+        </a>
+        <a
+          [href]="config.contact.linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cursor="disable"
+          class="contact-social"
+        >
+          Linkedin
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+            <path d="M6 6l10.59 10.59L18 15.17V6H6z" transform="rotate(45 12 12)"/>
+          </svg>
+        </a>
+      </div>
+      <div class="contact-box">
+        <h2>Designed and Developed <br /> by <span>{{ config.developer.fullName }}</span></h2>
+        <h5>&copy; {{ currentYear }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
