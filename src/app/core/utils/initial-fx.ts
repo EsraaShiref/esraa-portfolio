@@ -91,6 +91,10 @@ export function initialFX() {
 }
 
 function LoopText(Text1: TextSplitter, Text2: TextSplitter) {
+  // Guard: if either side has no matching elements in the DOM, skip
+  // animating it entirely instead of letting GSAP warn on a forever-loop.
+  if (!Text1.chars?.length || !Text2.chars?.length) return;
+
   var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
   const delay = 4;
   const delay2 = delay * 2 + 1;
