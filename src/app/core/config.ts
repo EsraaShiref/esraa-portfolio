@@ -63,7 +63,7 @@ export const config = {
       title: 'Harfi',
       category: 'Full Stack / AI',
       technologies: 'Angular 21, TypeScript, ASP.NET Core, SignalR, Bootstrap 5 RTL, RAG-based AI',
-      image: '/images/project-1.webp',
+      image: '/images/project-1.png',
       description:
         'Arabic-first craftsmen marketplace platform (ITI graduation project). Served as both Frontend Lead and Backend Lead on a 5-developer team, owning end-to-end architecture. Frontend: Angular 21 standalone-component architecture, authentication and routing, bilingual RTL/LTR i18n, theming, and real-time SignalR-powered chat and notifications UI. Backend: ASP.NET Core Web API with JWT authentication, SignalR hubs for real-time messaging, and a RAG-based AI assistant backed by vector search for conversational craftsman discovery.',
     },
@@ -72,7 +72,7 @@ export const config = {
       title: 'Tasweeqar',
       category: 'Company Website',
       technologies: 'Angular 21, TypeScript, SCSS, i18n (AR/EN), Signal-based Reactivity',
-      image: '/images/project-2.webp',
+      image: '/images/project-2.png',
       description:
         'Production-ready bilingual (Arabic RTL / English LTR) company profile website for a Saudi construction firm. Built with Angular 21 standalone components, no NgModules, and full signal-based reactivity, with a custom SCSS design system for services, portfolio, team, and contact sections.',
     },
@@ -81,7 +81,7 @@ export const config = {
       title: 'HealthHub',
       category: 'Mobile App',
       technologies: 'React Native, Laravel, Clarifai API, Spoonacular API, Stripe / PayPal',
-      image: '/images/project-3.webp',
+      image: '/images/project-3.png',
       description:
         'Scalable doctor appointment system with real-time availability and booking management, AI-based food recognition and nutrition analysis for calorie tracking, and a secure e-commerce payment module.',
     },
@@ -90,7 +90,7 @@ export const config = {
       title: 'University Management System',
       category: 'Full Stack',
       technologies: 'ASP.NET MVC, C#, SQL Server, Entity Framework',
-      image: '/images/project-4.webp',
+      image: '/images/project-4.png',
       description:
         'Full-stack system for managing students, courses, attendance, and grading, with role-based authentication/authorization and a scalable MVC architecture with full CRUD operations.',
     },
@@ -99,7 +99,7 @@ export const config = {
       title: 'Employee Management System',
       category: 'Full Stack',
       technologies: 'ASP.NET, SQL Server, MVC',
-      image: '/images/project-5.webp',
+      image: '/images/project-5.png',
       description:
         'HR system for managing employee records through an interactive dashboard, applying the MVC design pattern with clean and maintainable architecture.',
     },

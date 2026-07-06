@@ -20,7 +20,7 @@
   z-index: 9;
 }
 .loading-button::before {
-  content: "";
+  content: '';
   background-color: #ffffff;
   top: var(--mouse-y);
   left: var(--mouse-x);
@@ -287,13 +287,30 @@
   font-size: 60px;
   font-weight: 600;
   text-transform: uppercase;
+  overflow: hidden; /* ADD THIS LINE */
+  white-space: nowrap; /* ADD THIS LINE */
 }
+
+.marquee-track {
+  display: inline-flex;
+  animation: marquee-scroll 20s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .loading-marquee span {
   padding: 0px 50px;
   position: relative;
 }
 .loading-marquee span::before {
-  content: "";
+  content: '';
   width: 20px;
   height: 20px;
   background-color: var(--backgroundColor);
