@@ -22,7 +22,7 @@ import { TechStackComponent } from '../../components/tech-stack/tech-stack.compo
 import { CallToActionComponent } from '../../components/call-to-action/call-to-action.component';
 import { ContactComponent } from '../../components/contact/contact.component';
 import setSplitText from '../../core/utils/split-text';
-
+import { setAllTimeline } from '../../core/three/utils/gsap-scroll';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -56,6 +56,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     this.handleResize();
+    setAllTimeline();
     // Skip the 3D loading screen on mobile, matching original LoadingProvider
     if (this.isMobile) {
       import('../../core/utils/initial-fx').then((module) => {

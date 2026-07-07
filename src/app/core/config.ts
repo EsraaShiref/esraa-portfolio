@@ -108,7 +108,7 @@ export const config = {
     email: 'Israashiref@gmail.com',
     phone: '+20 102 949 6150',
     github: 'https://github.com/EsraaShiref',
-    linkedin: 'https://linkedin.com/in/sraa-shiref',
+    linkedin: 'https://linkedin.com/in/esraa-shiref',
   },
   skills: {
     develop: {

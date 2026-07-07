@@ -31,7 +31,7 @@ export const techStack: TechItem[][] = [
     { name: 'SQL Server', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg', url: 'https://www.microsoft.com/en-us/sql-server' },
     { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', url: 'https://postgresql.org' },
     { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg', url: 'https://firebase.google.com' },
-    { name: 'OpenAI API', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg', url: 'https://platform.openai.com' },
+    { name: 'OpenAI API', icon: 'https://thesvg.org/icons/openai/wordmark.svg', url: 'https://platform.openai.com' },
   ],
   // Row 4 - 3 items (tip of pyramid)
   [
